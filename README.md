@@ -2,7 +2,7 @@
 
 This repository contains configuration files and installation scripts for a quick and ready to coding work environment, based on any *Debian* or *Debian-based* distribution.
 
-For a more hardcore all-tui setup, take a look at [*PUTS*](https://github.com/matteogiorgi/puts/), it may sting a bit but you might like it.
+For a more hardcore all-tui setup, take a look at [PUTS](https://github.com/matteogiorgi/puts/), it may sting a bit but you might like it.
 
 
 
