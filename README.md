@@ -18,7 +18,7 @@ The only prerequisite you need to cover is a working *Debian* in any version or 
 
 ### Code
 
-This script installs all the basic packages you need and resets your *VSCode* configuration, plus it installs few extensions to make it as loose as a goose and ready to roll in no time. Run `./guts_code` any time you want from the root of the repository to clean *VSCode* for good.
+This script installs all the basic packages you need and resets your *VSCode* configuration, plus few extensions to make it as loose as a goose and ready to roll in no time. Run `./guts_code` any time you want from the root of the repository to clean *VSCode* for good.
 
 > You need to install *VSCode* yourself, check the [official website](https://code.visualstudio.com) for the deb package.
 
