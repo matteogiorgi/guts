@@ -34,7 +34,7 @@
     "editor.rulers": [],
     "editor.glyphMargin": true,
     "editor.folding": true,
-    "editor.foldingHighlight": false,
+    "editor.foldingHighlight": true,
     "editor.showFoldingControls": "never",
     "editor.stickyScroll.defaultModel": "outlineModel",
     "editor.wordWrap": "off",
