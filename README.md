@@ -13,6 +13,8 @@ The only prerequisite you need to cover is a working *Debian* in any version or 
 
 > The installer do not symlink any file, it just copy the configurations in the right place, so they can be easily modified end eventually resetted running the installer again.
 
+To full install GUTS, run the [`install`](https://github.com/matteogiorgi/guts/blob/main/install) script, it will execute the installer for you.
+
 
 
 

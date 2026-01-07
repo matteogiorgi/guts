@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+set -eu
+
+
+
+
+### Functions
+#############
+
+run_installer() {
+    chmod +x "$1" 2>/dev/null || :
+    "$1"
+}
+
+
+
+
+### Puts-Install
+################
+
+cat << EOF
+ _______       __            ___             __         __ __
+|   _   .--.--|  |_.-----.  |   .-----.-----|  |_.---.-|  |  |
+|.  |___|  |  |   _|__ --|  |.  |     |__ --|   _|  _  |  |  |
+|.  |   |_____|____|_____|  |.  |__|__|_____|____|___._|__|__|
+|:  1   |                   |:  |
+|::.. . |                   |::.|
+\`-------'                   \`---'
+
+This script installs GUTS (the "GUI UNIX Tools System") on
+your system. It will run just one installer: guts_code.
+• guts_code installs all the basic packages you need and
+  resets your VSCode configuration, plus few extensions to
+  make it as loose as a goose and ready to roll in no time
+
+EOF
+
+
+
+
+### Code
+########
+
+ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" 2>/dev/null && pwd)
+CODE_INSTALLER="$ROOT_DIR/guts_code"
+# ---
+printf "\n"
+run_installer "$CODE_INSTALLER"
