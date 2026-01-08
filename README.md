@@ -13,14 +13,15 @@ The only prerequisite you need to cover is a working *Debian* in any version or 
 
 > The installer do not symlink any file, it just copy the configurations in the right place, so they can be easily modified end eventually resetted running the installer again.
 
-To full install GUTS, run the [`install`](https://github.com/matteogiorgi/guts/blob/main/install) script, it will execute the installer for you.
+To full install GUTS, lunch the installer (as described below) or just run the [`install`](https://github.com/matteogiorgi/guts/blob/main/install) script, it will execute the installer for you.
+
 
 
 
 
 ### Code
 
-This script installs all the basic packages you need and resets your *VSCode* configuration, plus few extensions to make it as loose as a goose and ready to roll in no time. Run `./guts_code` any time you want from the root of the repository to clean *VSCode* for good.
+This script installs all the basic packages you need and resets your *VSCode* configuration, plus it installs few extensions to make it as loose as a goose and ready to roll in no time. Run `./guts_code` any time you want from the root of the repository to clean *VSCode* for good.
 
 > You need to install *VSCode* yourself, check the [official website](https://code.visualstudio.com) for the deb package.
 
