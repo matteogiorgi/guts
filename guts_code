@@ -135,8 +135,7 @@ for EXTENSION in \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \
-    ms-toolsai.datawrangler \
-    google.colab
+    ms-toolsai.datawrangler
 do
     printf "%s" "installing '$EXTENSION'"
     try_run \code --install-extension "$EXTENSION"
