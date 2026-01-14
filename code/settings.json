@@ -93,7 +93,6 @@
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "workbench.productIconTheme": "Default",
-    "workbench.layoutControl.enabled": false,
     "workbench.tips.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
