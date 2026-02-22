@@ -133,7 +133,8 @@ for EXTENSION in \
     ms-python.python \
     ms-python.black-formatter \
     ms-toolsai.jupyter \
-    ms-toolsai.datawrangler
+    ms-toolsai.datawrangler \
+    ms-vscode-remote.remote-ssh
 do
     printf "%s" "installing '$EXTENSION'"
     try_run \code --install-extension "$EXTENSION"
