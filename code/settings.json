@@ -97,7 +97,6 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.experimental.share.enabled": false,
-    "chat.commandCenter.enabled": false,
     "github.copilot.editor.enableCodeActions": true,
     "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.enable": {
