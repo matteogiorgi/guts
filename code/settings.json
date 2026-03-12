@@ -1,11 +1,18 @@
 {
+    // GENERAL
     "keyboard.dispatch": "keyCode",
     "breadcrumbs.enabled": false,
     "telemetry.telemetryLevel": "off",
+    "extensions.ignoreRecommendations": true,
+    "debug.terminal.clearBeforeReusing": true,
+
+    // SECURITY
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.emptyWindow": false,
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.startupPrompt": "never",
+
+    //WINDOW
     "window.restoreWindows": "none",
     "window.titleBarStyle": "native",
     "window.customTitleBarVisibility": "never",
@@ -16,6 +23,8 @@
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
     "window.autoDetectColorScheme": false,
+
+    // EDITOR
     "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "file",
     "editor.insertSpaces": true,
@@ -56,8 +65,8 @@
     "editor.hover.enabled": "off",
     "editor.lightbulb.enabled": "off",
     "editor.inlayHints.enabled": "off",
-    "extensions.ignoreRecommendations": true,
-    "debug.terminal.clearBeforeReusing": true,
+
+    // TERMINAL
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "x-terminal-emulator",
     "terminal.integrated.fontFamily": "'Cascadia Code', 'monospace'",
@@ -78,6 +87,8 @@
             "path": ["/bin/dash","/usr/bin/dash"]
         }
     },
+
+    // WORKBENCH
     "workbench.editor.showTabs": "multiple",
     "workbench.startupEditor": "none",
     "workbench.statusBar.visible": true,
@@ -97,17 +108,25 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.experimental.share.enabled": false,
+
+    // GITHUB-COPILOT
     "github.copilot.editor.enableCodeActions": true,
     "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.enable": {
         "*": false
     },
+
+    // C/C++
     "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.formatOnSave": false
     },
     "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.formatOnSave": true
     },
+
+    // PYTHON
     "python.analysis.typeCheckingMode": "standard",
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,
@@ -118,6 +137,8 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+
+    // JUPYTER-NOTEBOOK
     "notebook.defaultFormatter": "ms-python.black-formatter",
     "notebook.formatOnSave.enabled": true,
     "notebook.stickyScroll.enabled": true,
@@ -125,6 +146,8 @@
     "notebook.showFoldingControls": "always",
     "notebook.insertToolbarLocation": "hidden",
     "notebook.cellToolbarVisibility": "hover",
+
+    // LATEX-WORKSHOP
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.view.pdf.zoom": "page-width",
     "latex-workshop.view.pdf.color.dark.backgroundColor": "#f5f6f7",
@@ -133,6 +156,7 @@
     "latex-workshop.view.pdf.color.light.pageBorderColor": "#f5f6f7",
     "latex-workshop.formatting.latex": "latexindent",
     "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
         "editor.formatOnSave": true
     }
 }
