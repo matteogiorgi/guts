@@ -15,8 +15,9 @@ sudo_privileges() {
 # ---
 ask_user() {
     printf "%s\n" "$1"
-    local ANS
-    read -r -p "wish to proceed anyway? [y/N] " ANS
+    ANS=
+    printf "%s" "wish to proceed anyway? [y/N] "
+    read -r ANS
     case "$ANS" in
         y | Y | yes | YES) printf "\n%s\n" "setup resumed";;
         *) printf "\n%s\n" "setup interrupted"; exit 1;;
@@ -99,9 +100,8 @@ fi
 if sudo_privileges; then
     sudo sh -c '
         apt-get update &&
-        apt-get upgrade -qq -y --allow-downgrades &&
         for PKG in "$@"; do
-            apt-get install -y -qq --no-install-recommends "$PKG" || true
+            apt-get install -y -qq --no-install-recommends "$PKG"
         done
         apt-get -qq -y autoremove --purge &&
         apt-get -qq -y autoclean
@@ -118,7 +118,7 @@ fi
 #########
 
 printf "\n%s\n" "UNINSTALLING ALL EXTENSIONS"
-for EXTENSION in $(\code --list-extensions); do
+\code --list-extensions | while IFS= read -r EXTENSION; do
     printf "%s" "uninstalling '$EXTENSION'"
     try_run \code --uninstall-extension "$EXTENSION"
 done
