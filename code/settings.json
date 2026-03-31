@@ -81,10 +81,6 @@
             "icon": "terminal-bash",
             "path": ["/bin/bash","/usr/bin/bash"],
             "args": ["--noprofile", "--norc", "--posix"]
-        },
-        "dash": {
-            "icon": "terminal-debian",
-            "path": ["/bin/dash","/usr/bin/dash"]
         }
     },
 
