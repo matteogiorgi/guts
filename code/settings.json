@@ -25,6 +25,7 @@
     "window.autoDetectColorScheme": false,
 
     // EDITOR
+    "editor.defaultFormatter": null,
     "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "file",
     "editor.insertSpaces": true,
@@ -112,11 +113,7 @@
         "*": false
     },
 
-    // C/C++
-    "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools",
-        "editor.formatOnSave": false
-    },
+    // C++
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.formatOnSave": true
