@@ -113,7 +113,16 @@
         "*": false
     },
 
-    // C++
+    // C/C++
+    "C_Cpp.formatting": "vcFormat",
+    "C_Cpp.vcFormat.indent.caseLabels": false,
+    "C_Cpp.vcFormat.newLine.beforeElse": true,
+    "C_Cpp.vcFormat.space.beforeFunctionOpenParenthesis": "remove",
+    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "right",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true
+    },
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.formatOnSave": true
